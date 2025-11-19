@@ -15,7 +15,7 @@ size = Vector2(20, 687)
 [node name="mundo_pong" type="Node2D"]
 
 [node name="Fundo" type="Sprite2D" parent="."]
-modulate = Color(0.383465, 0.329379, 0.283783, 1)
+modulate = Color(0.318585, 0.271652, 0.23206, 1)
 position = Vector2(579.5, 326.5)
 scale = Vector2(5.07111, 2.75111)
 texture = ExtResource("1_hlk6k")

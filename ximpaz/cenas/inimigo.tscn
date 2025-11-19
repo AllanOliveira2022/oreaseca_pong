@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://bwubvq6u1mt4a"]
+[gd_scene load_steps=4 format=3 uid="uid://bwubvq6u1mt4a"]
 
 [ext_resource type="Texture2D" uid="uid://bjjn8tx2amjo1" path="res://player.png" id="1_4c0y2"]
+[ext_resource type="Script" path="res://cenas/inimigo.gd" id="1_t4pbr"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d7q2t"]
 size = Vector2(45, 189)
 
 [node name="inimigo" type="CharacterBody2D"]
+script = ExtResource("1_t4pbr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(-1.34596, 0.264829)
