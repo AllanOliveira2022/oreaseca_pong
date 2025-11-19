@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://bwubvq6u1mt4a"]
+
+[ext_resource type="Texture2D" uid="uid://bjjn8tx2amjo1" path="res://player.png" id="1_4c0y2"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_d7q2t"]
+size = Vector2(45, 189)
+
+[node name="inimigo" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.34596, 0.264829)
+rotation = 1.5735
+scale = Vector2(0.368513, 0.176377)
+texture = ExtResource("1_4c0y2")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, 0.5)
+shape = SubResource("RectangleShape2D_d7q2t")

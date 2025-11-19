@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://crcvqs5c4veo4"]
+
+[ext_resource type="Script" path="res://cenas/player_padle.gd" id="1_04vpf"]
+[ext_resource type="Texture2D" uid="uid://bjjn8tx2amjo1" path="res://player.png" id="2_d83km"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hvtrp"]
+size = Vector2(42, 189)
+
+[node name="playerPadle" type="CharacterBody2D"]
+script = ExtResource("1_04vpf")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.34596, 0.264829)
+rotation = 1.5735
+scale = Vector2(0.368513, 0.176377)
+texture = ExtResource("2_d83km")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 0.5)
+shape = SubResource("RectangleShape2D_hvtrp")
+debug_color = Color(0, 0, 0, 0.439216)
